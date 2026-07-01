@@ -2,7 +2,7 @@
 
 ## Leitprinzip
 
-MusicCurator models music, not files.
+MusicCurator models music, knowledge and relationships, not files.
 
 Die Datei ist nur der technische Träger. Die zentrale Einheit ist die musikalische Information: Werk, Aufnahme, Mitwirkende, Kategorien und deren Beziehungen.
 
@@ -226,3 +226,47 @@ Track.genre = "Barock"
 Sondern:
 
 Track → CategoryAssignment → Category
+
+---
+
+## Work Relation / Werkbeziehung
+
+Eine Werkbeziehung beschreibt eine fachliche, musikalische oder persönliche Beziehung zwischen zwei Werken.
+
+Beispiele:
+- verwandte Stimmung
+- ähnliche Besetzung
+- gleiche Epoche
+- thematische Nähe
+- musikalischer Kontrast
+- passt gut danach
+- persönliche Assoziation
+- beeinflusst von
+- erinnert an
+
+Werkbeziehungen können objektiv oder subjektiv sein.
+
+Eine Werkbeziehung kann benannt, kommentiert und später grafisch dargestellt werden.
+
+Beispiel:
+
+Mahler: Sinfonie Nr. 2  
+→ verwandte Stimmung →  
+Bruckner: Sinfonie Nr. 8
+
+---
+
+## Knowledge Layer / Wissensebene
+
+Der Knowledge Layer enthält Informationen, die über reine Metadaten hinausgehen.
+
+Dazu gehören:
+- persönliche Assoziationen
+- Werkbeziehungen
+- Kommentare
+- Hörnotizen
+- Empfehlungen
+- kuratierte Zusammenhänge
+- thematische Pfade durch die Sammlung
+
+Der Knowledge Layer macht MusicCurator zu mehr als einer Musikdatenbank: zu einer persönlichen Musik-Wissensbasis.
