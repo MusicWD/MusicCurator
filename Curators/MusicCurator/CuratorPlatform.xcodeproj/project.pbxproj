@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A3B94B22FF6871500CD9AC5 /* TechnicalArchitecture.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94A72FF6871500CD9AC5 /* TechnicalArchitecture.md */; };
+		6A3B94B32FF6871500CD9AC5 /* Ideas.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94AC2FF6871500CD9AC5 /* Ideas.md */; };
+		6A3B94B42FF6871500CD9AC5 /* DomainModel.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94A92FF6871500CD9AC5 /* DomainModel.md */; };
+		6A3B94B52FF6871500CD9AC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94B02FF6871500CD9AC5 /* README.md */; };
+		6A3B94B62FF6871500CD9AC5 /* Roadmap.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94AE2FF6871500CD9AC5 /* Roadmap.md */; };
+		6A3B94B72FF6871500CD9AC5 /* Glossary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B94AA2FF6871500CD9AC5 /* Glossary.md */; };
+		6AC32ABC2FF68C5000BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ABA2FF68C5000BC0465 /* README.md */; };
+		6AC32AC32FF68C7500BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AC12FF68C7500BC0465 /* README.md */; };
+		6AC32AC42FF68C7500BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ABF2FF68C7500BC0465 /* README.md */; };
+		6AC32AC52FF68C7500BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ABD2FF68C7500BC0465 /* README.md */; };
+		6AC32AE22FF68C8E00BC0465 /* 020_Entity_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD32FF68C8E00BC0465 /* 020_Entity_Model.md */; };
+		6AC32AE32FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AC92FF68C8E00BC0465 /* README.md */; };
+		6AC32AE42FF68C8E00BC0465 /* ADR-0003-No-Implicit-Inheritance.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AC82FF68C8E00BC0465 /* ADR-0003-No-Implicit-Inheritance.md */; };
+		6AC32AE52FF68C8E00BC0465 /* 070_Inheritance_and_Scope.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD82FF68C8E00BC0465 /* 070_Inheritance_and_Scope.md */; };
+		6AC32AE62FF68C8E00BC0465 /* EntityVocabulary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ADB2FF68C8E00BC0465 /* EntityVocabulary.md */; };
+		6AC32AE72FF68C8E00BC0465 /* Album_Track_No_Inheritance.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ACE2FF68C8E00BC0465 /* Album_Track_No_Inheritance.md */; };
+		6AC32AE82FF68C8E00BC0465 /* 030_Relation_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD42FF68C8E00BC0465 /* 030_Relation_Model.md */; };
+		6AC32AE92FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ACF2FF68C8E00BC0465 /* README.md */; };
+		6AC32AEA2FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AE02FF68C8E00BC0465 /* README.md */; };
+		6AC32AEB2FF68C8E00BC0465 /* ADR-0002-Controlled-Relation-Vocabulary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AC72FF68C8E00BC0465 /* ADR-0002-Controlled-Relation-Vocabulary.md */; };
+		6AC32AEC2FF68C8E00BC0465 /* 010_Design_Principles.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD22FF68C8E00BC0465 /* 010_Design_Principles.md */; };
+		6AC32AED2FF68C8E00BC0465 /* 040_Assertion_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD52FF68C8E00BC0465 /* 040_Assertion_Model.md */; };
+		6AC32AEE2FF68C8E00BC0465 /* PredicateVocabulary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ADC2FF68C8E00BC0465 /* PredicateVocabulary.md */; };
+		6AC32AEF2FF68C8E00BC0465 /* ADR-0001-Epistemic-Knowledge-Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AC62FF68C8E00BC0465 /* ADR-0001-Epistemic-Knowledge-Model.md */; };
+		6AC32AF02FF68C8E00BC0465 /* 050_Evidence_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD62FF68C8E00BC0465 /* 050_Evidence_Model.md */; };
+		6AC32AF12FF68C8E00BC0465 /* Core_Model.mmd in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ACB2FF68C8E00BC0465 /* Core_Model.mmd */; };
+		6AC32AF22FF68C8E00BC0465 /* 000_Epistemic_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD12FF68C8E00BC0465 /* 000_Epistemic_Model.md */; };
+		6AC32AF32FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ACC2FF68C8E00BC0465 /* README.md */; };
+		6AC32AF42FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD92FF68C8E00BC0465 /* README.md */; };
+		6AC32AF52FF68C8E00BC0465 /* 060_Agent_Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AD72FF68C8E00BC0465 /* 060_Agent_Model.md */; };
+		6AC32AF62FF68C8E00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ADD2FF68C8E00BC0465 /* README.md */; };
+		6AC32AF72FF68C8E00BC0465 /* RelationVocabulary.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32ADE2FF68C8E00BC0465 /* RelationVocabulary.md */; };
+		6AC32AFA2FF68C9D00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AF82FF68C9D00BC0465 /* README.md */; };
+		6AC32AFD2FF68CAC00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AFB2FF68CAC00BC0465 /* README.md */; };
+		6AC32B042FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AFE2FF68CBE00BC0465 /* README.md */; };
+		6AC32B052FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32B002FF68CBE00BC0465 /* README.md */; };
+		6AC32B062FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32B022FF68CBE00BC0465 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A279CC42FF563B600906CC4 /* MusicCurator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicCurator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3B94A72FF6871500CD9AC5 /* TechnicalArchitecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TechnicalArchitecture.md; sourceTree = "<group>"; };
+		6A3B94A92FF6871500CD9AC5 /* DomainModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DomainModel.md; sourceTree = "<group>"; };
+		6A3B94AA2FF6871500CD9AC5 /* Glossary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Glossary.md; sourceTree = "<group>"; };
+		6A3B94AC2FF6871500CD9AC5 /* Ideas.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ideas.md; sourceTree = "<group>"; };
+		6A3B94AE2FF6871500CD9AC5 /* Roadmap.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Roadmap.md; sourceTree = "<group>"; };
+		6A3B94B02FF6871500CD9AC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ABA2FF68C5000BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ABD2FF68C7500BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ABF2FF68C7500BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AC12FF68C7500BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AC62FF68C8E00BC0465 /* ADR-0001-Epistemic-Knowledge-Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ADR-0001-Epistemic-Knowledge-Model.md"; sourceTree = "<group>"; };
+		6AC32AC72FF68C8E00BC0465 /* ADR-0002-Controlled-Relation-Vocabulary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ADR-0002-Controlled-Relation-Vocabulary.md"; sourceTree = "<group>"; };
+		6AC32AC82FF68C8E00BC0465 /* ADR-0003-No-Implicit-Inheritance.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ADR-0003-No-Implicit-Inheritance.md"; sourceTree = "<group>"; };
+		6AC32AC92FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ACB2FF68C8E00BC0465 /* Core_Model.mmd */ = {isa = PBXFileReference; lastKnownFileType = text; path = Core_Model.mmd; sourceTree = "<group>"; };
+		6AC32ACC2FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ACE2FF68C8E00BC0465 /* Album_Track_No_Inheritance.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Album_Track_No_Inheritance.md; sourceTree = "<group>"; };
+		6AC32ACF2FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AD12FF68C8E00BC0465 /* 000_Epistemic_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 000_Epistemic_Model.md; sourceTree = "<group>"; };
+		6AC32AD22FF68C8E00BC0465 /* 010_Design_Principles.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 010_Design_Principles.md; sourceTree = "<group>"; };
+		6AC32AD32FF68C8E00BC0465 /* 020_Entity_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 020_Entity_Model.md; sourceTree = "<group>"; };
+		6AC32AD42FF68C8E00BC0465 /* 030_Relation_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 030_Relation_Model.md; sourceTree = "<group>"; };
+		6AC32AD52FF68C8E00BC0465 /* 040_Assertion_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 040_Assertion_Model.md; sourceTree = "<group>"; };
+		6AC32AD62FF68C8E00BC0465 /* 050_Evidence_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 050_Evidence_Model.md; sourceTree = "<group>"; };
+		6AC32AD72FF68C8E00BC0465 /* 060_Agent_Model.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 060_Agent_Model.md; sourceTree = "<group>"; };
+		6AC32AD82FF68C8E00BC0465 /* 070_Inheritance_and_Scope.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 070_Inheritance_and_Scope.md; sourceTree = "<group>"; };
+		6AC32AD92FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ADB2FF68C8E00BC0465 /* EntityVocabulary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EntityVocabulary.md; sourceTree = "<group>"; };
+		6AC32ADC2FF68C8E00BC0465 /* PredicateVocabulary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PredicateVocabulary.md; sourceTree = "<group>"; };
+		6AC32ADD2FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32ADE2FF68C8E00BC0465 /* RelationVocabulary.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RelationVocabulary.md; sourceTree = "<group>"; };
+		6AC32AE02FF68C8E00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AF82FF68C9D00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AFB2FF68CAC00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32AFE2FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32B002FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32B022FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6A279CC62FF563B600906CC4 /* MusicCurator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MusicCurator;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A279CC12FF563B500906CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A279CBB2FF563B500906CC4 = {
+			isa = PBXGroup;
+			children = (
+				6A279CC62FF563B600906CC4 /* MusicCurator */,
+				6AC32AFC2FF68CAC00BC0465 /* Resources */,
+				6AC32AF92FF68C9D00BC0465 /* Research */,
+				6AC32AFF2FF68CBE00BC0465 /* Scripts */,
+				6AC32B032FF68CBE00BC0465 /* SharedSource */,
+				6AC32AE12FF68C8E00BC0465 /* KnowledgeModel */,
+				6AC32AC22FF68C7500BC0465 /* Import */,
+				6AC32ABB2FF68C5000BC0465 /* Tests */,
+				6A279CC52FF563B600906CC4 /* Products */,
+				6A3B94B12FF6871500CD9AC5 /* docs */,
+			);
+			sourceTree = "<group>";
+		};
+		6A279CC52FF563B600906CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A279CC42FF563B600906CC4 /* MusicCurator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A3B94A82FF6871500CD9AC5 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B94A72FF6871500CD9AC5 /* TechnicalArchitecture.md */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		6A3B94AB2FF6871500CD9AC5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B94A92FF6871500CD9AC5 /* DomainModel.md */,
+				6A3B94AA2FF6871500CD9AC5 /* Glossary.md */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6A3B94AD2FF6871500CD9AC5 /* Ideas */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B94AC2FF6871500CD9AC5 /* Ideas.md */,
+			);
+			path = Ideas;
+			sourceTree = "<group>";
+		};
+		6A3B94AF2FF6871500CD9AC5 /* Roadmap */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B94AE2FF6871500CD9AC5 /* Roadmap.md */,
+			);
+			path = Roadmap;
+			sourceTree = "<group>";
+		};
+		6A3B94B12FF6871500CD9AC5 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B94A82FF6871500CD9AC5 /* Architecture */,
+				6A3B94AB2FF6871500CD9AC5 /* Domain */,
+				6A3B94AD2FF6871500CD9AC5 /* Ideas */,
+				6A3B94AF2FF6871500CD9AC5 /* Roadmap */,
+				6A3B94B02FF6871500CD9AC5 /* README.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		6AC32ABB2FF68C5000BC0465 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ABA2FF68C5000BC0465 /* README.md */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6AC32ABE2FF68C7500BC0465 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ABD2FF68C7500BC0465 /* README.md */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6AC32AC02FF68C7500BC0465 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ABF2FF68C7500BC0465 /* README.md */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		6AC32AC22FF68C7500BC0465 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ABE2FF68C7500BC0465 /* Sources */,
+				6AC32AC02FF68C7500BC0465 /* TestData */,
+				6AC32AC12FF68C7500BC0465 /* README.md */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		6AC32ACA2FF68C8E00BC0465 /* Decisions */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32AC62FF68C8E00BC0465 /* ADR-0001-Epistemic-Knowledge-Model.md */,
+				6AC32AC72FF68C8E00BC0465 /* ADR-0002-Controlled-Relation-Vocabulary.md */,
+				6AC32AC82FF68C8E00BC0465 /* ADR-0003-No-Implicit-Inheritance.md */,
+				6AC32AC92FF68C8E00BC0465 /* README.md */,
+			);
+			path = Decisions;
+			sourceTree = "<group>";
+		};
+		6AC32ACD2FF68C8E00BC0465 /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ACB2FF68C8E00BC0465 /* Core_Model.mmd */,
+				6AC32ACC2FF68C8E00BC0465 /* README.md */,
+			);
+			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		6AC32AD02FF68C8E00BC0465 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ACE2FF68C8E00BC0465 /* Album_Track_No_Inheritance.md */,
+				6AC32ACF2FF68C8E00BC0465 /* README.md */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		6AC32ADA2FF68C8E00BC0465 /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32AD12FF68C8E00BC0465 /* 000_Epistemic_Model.md */,
+				6AC32AD22FF68C8E00BC0465 /* 010_Design_Principles.md */,
+				6AC32AD32FF68C8E00BC0465 /* 020_Entity_Model.md */,
+				6AC32AD42FF68C8E00BC0465 /* 030_Relation_Model.md */,
+				6AC32AD52FF68C8E00BC0465 /* 040_Assertion_Model.md */,
+				6AC32AD62FF68C8E00BC0465 /* 050_Evidence_Model.md */,
+				6AC32AD72FF68C8E00BC0465 /* 060_Agent_Model.md */,
+				6AC32AD82FF68C8E00BC0465 /* 070_Inheritance_and_Scope.md */,
+				6AC32AD92FF68C8E00BC0465 /* README.md */,
+			);
+			path = Foundations;
+			sourceTree = "<group>";
+		};
+		6AC32ADF2FF68C8E00BC0465 /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ADB2FF68C8E00BC0465 /* EntityVocabulary.md */,
+				6AC32ADC2FF68C8E00BC0465 /* PredicateVocabulary.md */,
+				6AC32ADD2FF68C8E00BC0465 /* README.md */,
+				6AC32ADE2FF68C8E00BC0465 /* RelationVocabulary.md */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		6AC32AE12FF68C8E00BC0465 /* KnowledgeModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32ACA2FF68C8E00BC0465 /* Decisions */,
+				6AC32ACD2FF68C8E00BC0465 /* Diagrams */,
+				6AC32AD02FF68C8E00BC0465 /* Examples */,
+				6AC32ADA2FF68C8E00BC0465 /* Foundations */,
+				6AC32ADF2FF68C8E00BC0465 /* Vocabulary */,
+				6AC32AE02FF68C8E00BC0465 /* README.md */,
+			);
+			path = KnowledgeModel;
+			sourceTree = "<group>";
+		};
+		6AC32AF92FF68C9D00BC0465 /* Research */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32AF82FF68C9D00BC0465 /* README.md */,
+			);
+			path = Research;
+			sourceTree = "<group>";
+		};
+		6AC32AFC2FF68CAC00BC0465 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32AFB2FF68CAC00BC0465 /* README.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6AC32AFF2FF68CBE00BC0465 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32AFE2FF68CBE00BC0465 /* README.md */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		6AC32B012FF68CBE00BC0465 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32B002FF68CBE00BC0465 /* README.md */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6AC32B032FF68CBE00BC0465 /* SharedSource */ = {
+			isa = PBXGroup;
+			children = (
+				6AC32B012FF68CBE00BC0465 /* Domain */,
+				6AC32B022FF68CBE00BC0465 /* README.md */,
+			);
+			path = SharedSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A279CC32FF563B500906CC4 /* MusicCurator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A279CCF2FF563B700906CC4 /* Build configuration list for PBXNativeTarget "MusicCurator" */;
+			buildPhases = (
+				6A279CC02FF563B500906CC4 /* Sources */,
+				6A279CC12FF563B500906CC4 /* Frameworks */,
+				6A279CC22FF563B500906CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6A279CC62FF563B600906CC4 /* MusicCurator */,
+			);
+			name = MusicCurator;
+			packageProductDependencies = (
+			);
+			productName = MusicCurator;
+			productReference = 6A279CC42FF563B600906CC4 /* MusicCurator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A279CBC2FF563B500906CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					6A279CC32FF563B500906CC4 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "CuratorPlatform" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A279CBB2FF563B500906CC4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6A279CC52FF563B600906CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A279CC32FF563B500906CC4 /* MusicCurator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A279CC22FF563B500906CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3B94B22FF6871500CD9AC5 /* TechnicalArchitecture.md in Resources */,
+				6AC32AC32FF68C7500BC0465 /* README.md in Resources */,
+				6AC32AE22FF68C8E00BC0465 /* 020_Entity_Model.md in Resources */,
+				6AC32AE32FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32AE42FF68C8E00BC0465 /* ADR-0003-No-Implicit-Inheritance.md in Resources */,
+				6AC32AE52FF68C8E00BC0465 /* 070_Inheritance_and_Scope.md in Resources */,
+				6AC32AE62FF68C8E00BC0465 /* EntityVocabulary.md in Resources */,
+				6AC32AE72FF68C8E00BC0465 /* Album_Track_No_Inheritance.md in Resources */,
+				6AC32AE82FF68C8E00BC0465 /* 030_Relation_Model.md in Resources */,
+				6AC32AE92FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32B042FF68CBE00BC0465 /* README.md in Resources */,
+				6AC32B052FF68CBE00BC0465 /* README.md in Resources */,
+				6AC32B062FF68CBE00BC0465 /* README.md in Resources */,
+				6AC32AEA2FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32AEB2FF68C8E00BC0465 /* ADR-0002-Controlled-Relation-Vocabulary.md in Resources */,
+				6AC32AEC2FF68C8E00BC0465 /* 010_Design_Principles.md in Resources */,
+				6AC32AED2FF68C8E00BC0465 /* 040_Assertion_Model.md in Resources */,
+				6AC32AEE2FF68C8E00BC0465 /* PredicateVocabulary.md in Resources */,
+				6AC32AEF2FF68C8E00BC0465 /* ADR-0001-Epistemic-Knowledge-Model.md in Resources */,
+				6AC32AF02FF68C8E00BC0465 /* 050_Evidence_Model.md in Resources */,
+				6AC32AFD2FF68CAC00BC0465 /* README.md in Resources */,
+				6AC32AF12FF68C8E00BC0465 /* Core_Model.mmd in Resources */,
+				6AC32AF22FF68C8E00BC0465 /* 000_Epistemic_Model.md in Resources */,
+				6AC32AF32FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32AF42FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32AF52FF68C8E00BC0465 /* 060_Agent_Model.md in Resources */,
+				6AC32AF62FF68C8E00BC0465 /* README.md in Resources */,
+				6AC32AF72FF68C8E00BC0465 /* RelationVocabulary.md in Resources */,
+				6AC32AC42FF68C7500BC0465 /* README.md in Resources */,
+				6AC32AC52FF68C7500BC0465 /* README.md in Resources */,
+				6A3B94B32FF6871500CD9AC5 /* Ideas.md in Resources */,
+				6A3B94B42FF6871500CD9AC5 /* DomainModel.md in Resources */,
+				6AC32AFA2FF68C9D00BC0465 /* README.md in Resources */,
+				6A3B94B52FF6871500CD9AC5 /* README.md in Resources */,
+				6A3B94B62FF6871500CD9AC5 /* Roadmap.md in Resources */,
+				6AC32ABC2FF68C5000BC0465 /* README.md in Resources */,
+				6A3B94B72FF6871500CD9AC5 /* Glossary.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A279CC02FF563B500906CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A279CCD2FF563B700906CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A279CCE2FF563B700906CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6A279CD02FF563B700906CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MusicWD.MusicCurator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A279CD12FF563B700906CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MusicWD.MusicCurator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "CuratorPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A279CCD2FF563B700906CC4 /* Debug */,
+				6A279CCE2FF563B700906CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A279CCF2FF563B700906CC4 /* Build configuration list for PBXNativeTarget "MusicCurator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A279CD02FF563B700906CC4 /* Debug */,
+				6A279CD12FF563B700906CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A279CBC2FF563B500906CC4 /* Project object */;
+}
