@@ -44,6 +44,10 @@
 		6AC32B042FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32AFE2FF68CBE00BC0465 /* README.md */; };
 		6AC32B052FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32B002FF68CBE00BC0465 /* README.md */; };
 		6AC32B062FF68CBE00BC0465 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32B022FF68CBE00BC0465 /* README.md */; };
+		6AC32B0A2FF6994300BC0465 /* Assertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32B092FF6994300BC0465 /* Assertion.swift */; };
+		6AC32B0C2FF6996800BC0465 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32B0B2FF6996800BC0465 /* Entity.swift */; };
+		6AC32B0E2FF6997A00BC0465 /* Relation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32B0D2FF6997A00BC0465 /* Relation.swift */; };
+		6AC32B102FF6998E00BC0465 /* Evidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32B0F2FF6998E00BC0465 /* Evidence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +89,10 @@
 		6AC32AFE2FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AC32B002FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AC32B022FF68CBE00BC0465 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6AC32B092FF6994300BC0465 /* Assertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertion.swift; sourceTree = SOURCE_ROOT; };
+		6AC32B0B2FF6996800BC0465 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = SOURCE_ROOT; };
+		6AC32B0D2FF6997A00BC0465 /* Relation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relation.swift; sourceTree = SOURCE_ROOT; };
+		6AC32B0F2FF6998E00BC0465 /* Evidence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evidence.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -306,6 +314,10 @@
 			isa = PBXGroup;
 			children = (
 				6AC32B002FF68CBE00BC0465 /* README.md */,
+				6AC32B092FF6994300BC0465 /* Assertion.swift */,
+				6AC32B0B2FF6996800BC0465 /* Entity.swift */,
+				6AC32B0D2FF6997A00BC0465 /* Relation.swift */,
+				6AC32B0F2FF6998E00BC0465 /* Evidence.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -430,6 +442,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC32B0C2FF6996800BC0465 /* Entity.swift in Sources */,
+				6AC32B0E2FF6997A00BC0465 /* Relation.swift in Sources */,
+				6AC32B102FF6998E00BC0465 /* Evidence.swift in Sources */,
+				6AC32B0A2FF6994300BC0465 /* Assertion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
