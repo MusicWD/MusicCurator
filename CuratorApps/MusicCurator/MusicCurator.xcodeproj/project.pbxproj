@@ -22,6 +22,12 @@
 			path = MusicCurator;
 			sourceTree = "<group>";
 		};
+		6AD0CAE02FF81225008B2886 /* docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = docs;
+			path = "/Users/Wolfgang/Developer/Curator Repository/docs";
+			sourceTree = "<absolute>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 				6A8535152FF8091F00D155B2 /* MusicCurator */,
 				6A8535112FF8090900D155B2 /* CuratorFramework */,
 				6A279CC52FF563B600906CC4 /* Products */,
+				6AD0CAE02FF81225008B2886 /* docs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "CuratorPlatform" */;
+			buildConfigurationList = 6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "MusicCurator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -313,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "CuratorPlatform" */ = {
+		6A279CBF2FF563B500906CC4 /* Build configuration list for PBXProject "MusicCurator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A279CCD2FF563B700906CC4 /* Debug */,
