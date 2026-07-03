@@ -11,58 +11,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6A279CC62FF563B600906CC4 /* MusicCurator */ = {
+		6A8535112FF8090900D155B2 /* CuratorFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = CuratorFramework;
+			path = "/Users/Wolfgang/Developer/Curator Repository/CuratorFramework";
+			sourceTree = "<absolute>";
+		};
+		6A8535152FF8091F00D155B2 /* MusicCurator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MusicCurator;
 			sourceTree = "<group>";
-		};
-		6AC32B272FF7DF8B00BC0465 /* docs */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = docs;
-			path = /Users/Wolfgang/Developer/MusicCurator/docs;
-			sourceTree = "<absolute>";
-		};
-		6AC32B2D2FF7DF8B00BC0465 /* Import */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = Import;
-			path = /Users/Wolfgang/Developer/MusicCurator/Import;
-			sourceTree = "<absolute>";
-		};
-		6AC32B492FF7DF8B00BC0465 /* KnowledgeModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = KnowledgeModel;
-			path = /Users/Wolfgang/Developer/MusicCurator/KnowledgeModel;
-			sourceTree = "<absolute>";
-		};
-		6AC32B4B2FF7DF8B00BC0465 /* Research */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = Research;
-			path = /Users/Wolfgang/Developer/MusicCurator/Research;
-			sourceTree = "<absolute>";
-		};
-		6AC32B4D2FF7DF8B00BC0465 /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = Resources;
-			path = /Users/Wolfgang/Developer/MusicCurator/Resources;
-			sourceTree = "<absolute>";
-		};
-		6AC32B4F2FF7DF8B00BC0465 /* Scripts */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = Scripts;
-			path = /Users/Wolfgang/Developer/MusicCurator/Scripts;
-			sourceTree = "<absolute>";
-		};
-		6AC32B532FF7DF8B00BC0465 /* SharedSource */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = SharedSource;
-			path = /Users/Wolfgang/Developer/MusicCurator/SharedSource;
-			sourceTree = "<absolute>";
-		};
-		6AC32B552FF7DF8B00BC0465 /* Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			name = Tests;
-			path = /Users/Wolfgang/Developer/MusicCurator/Tests;
-			sourceTree = "<absolute>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -80,15 +38,8 @@
 		6A279CBB2FF563B500906CC4 = {
 			isa = PBXGroup;
 			children = (
-				6AC32B272FF7DF8B00BC0465 /* docs */,
-				6AC32B2D2FF7DF8B00BC0465 /* Import */,
-				6AC32B492FF7DF8B00BC0465 /* KnowledgeModel */,
-				6AC32B4B2FF7DF8B00BC0465 /* Research */,
-				6AC32B4D2FF7DF8B00BC0465 /* Resources */,
-				6AC32B4F2FF7DF8B00BC0465 /* Scripts */,
-				6AC32B532FF7DF8B00BC0465 /* SharedSource */,
-				6AC32B552FF7DF8B00BC0465 /* Tests */,
-				6A279CC62FF563B600906CC4 /* MusicCurator */,
+				6A8535152FF8091F00D155B2 /* MusicCurator */,
+				6A8535112FF8090900D155B2 /* CuratorFramework */,
 				6A279CC52FF563B600906CC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +68,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6A279CC62FF563B600906CC4 /* MusicCurator */,
+				6A8535152FF8091F00D155B2 /* MusicCurator */,
 			);
 			name = MusicCurator;
 			packageProductDependencies = (
