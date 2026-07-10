@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A750F7230012E8000E8DC6E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A750F7130012E6400E8DC6E /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6A279CC42FF563B600906CC4 /* MusicCurator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicCurator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A750F7130012E6400E8DC6E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A750F7230012E8000E8DC6E /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +54,7 @@
 				6A8535112FF8090900D155B2 /* CuratorFramework */,
 				6A279CC52FF563B600906CC4 /* Products */,
 				6AD0CAE02FF81225008B2886 /* docs */,
+				6A750F7030012E6400E8DC6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +64,14 @@
 				6A279CC42FF563B600906CC4 /* MusicCurator.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6A750F7030012E6400E8DC6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A750F7130012E6400E8DC6E /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
