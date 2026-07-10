@@ -3,3 +3,7 @@
 xcuserdata/
 DerivedData/
 .build/
+SampleData/*.sqlite
+SampleData/*.db
+SampleData/*.sqlite-shm
+SampleData/*.sqlite-wal
