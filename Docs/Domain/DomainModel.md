@@ -1,353 +1,237 @@
-# MusicCurator Domain Model v0.1
+# MusicCurator Domain Model
 
-## Leitidee
+Version: 0.9
+Status: Draft
+Author: Wolfgang Dufek & ChatGPT
+Last Updated: 2026-07-11
 
-MusicCurator modelliert nicht primär Dateien, sondern Musik in ihren Beziehungen.
+---
 
-Eine Datei ist nur die technische Speicherung einer Aufnahme. Die zentralen fachlichen Objekte sind Werk, Werkteil, Aufnahme, Album, Track, Datei, Personen/Ensembles, Mitwirkungen und Kategorien.
+# Philosophy
 
-## Grundprinzipien
+> The model is not invented. It is discovered.
 
-1. Das Modell ist relational.
-2. Alles, was mehrfach vorkommen kann, wird als n:m-Beziehung modelliert.
-3. Swinsian ist eine Datenquelle und ein Player, nicht das fachliche Zentrum.
-4. MusicCurator führt eine eigene Kurationsdatenbank.
-5. Änderungen erfolgen nur über Preview, Backup und kontrolliertes Apply.
+MusicCurator does not start with files, albums or tags.
 
-## Zentrale Ebenen
+It starts with the real world of music.
 
-### 1. Bibliothek
+The purpose of the model is to represent musical knowledge as faithfully as possible while remaining technically implementable and maintainable.
 
-Die Bibliothek ist die Gesamtheit aller verwalteten Musikobjekte.
+---
 
-Enthält:
-- Werke
-- Aufnahmen
-- Alben
-- Tracks
-- Dateien
-- Personen und Ensembles
-- Kategorien
-- Regeln
-- Quellen
+# ADR-000
 
-### 2. Menschen und Ensembles
+## Everything is an Entity.
+## Everything else is a Relationship.
 
-#### Person
+This is the fundamental architectural decision of MusicCurator.
 
-Eine natürliche Person, z. B.:
-- Johann Sebastian Bach
-- Herbert von Karajan
-- Anne-Sophie Mutter
-- Dietrich Fischer-Dieskau
+No concept shall be introduced unless it can be identified either as
 
-Personen können unterschiedliche Rollen haben:
-- Komponist
-- Dirigent
-- Solist
-- Sänger
-- Interpret
-- Arrangeur
-- Textdichter
+- an Entity
+- or a Relationship.
 
-#### Ensemble
+Everything else is derived from these two concepts.
 
-Eine musikalische Gruppe oder Institution, z. B.:
-- Wiener Philharmoniker
-- Berliner Philharmoniker
-- Arnold Schoenberg Chor
-- Emerson String Quartet
+---
 
-Ensembles können Rollen haben:
-- Orchester
-- Chor
-- Kammerensemble
-- Band
-- Quartett
+# Core Principles
 
-### 3. Musik
+## Principle 1
 
-#### Work / Werk
+MusicCurator models music, not files.
 
-Ein Werk ist die musikalische Komposition als abstrakte Einheit.
+Files are technical carriers.
 
-Beispiele:
-- Matthäuspassion BWV 244
-- Sinfonie Nr. 5 c-Moll op. 67
-- Die Zauberflöte KV 620
-- Kind of Blue
+Music is represented by entities and their relationships.
 
-Ein Werk existiert unabhängig von Album, Aufnahme oder Datei.
+---
 
-Attribute:
-- Titel
-- Untertitel
-- Werkverzeichnisnummer, z. B. BWV, KV, Hob., D, op.
-- Komponist(en)
-- Entstehungsjahr / Epoche
-- Werktyp, z. B. Sinfonie, Oper, Konzert, Lied, Jazz-Album
+## Principle 2
 
-#### WorkPart / Werkteil
+Entities have identity.
 
-Ein Werk kann Teile haben.
+Relationships have meaning.
 
-Beispiele:
-- Satz I: Allegro con brio
-- Arie: Erbarme dich
-- Ouvertüre
-- Rezitativ
-- Track innerhalb eines Jazz-Albums
+---
 
-Wichtig: Ein Track soll möglichst nicht nur „Track 4“ sein, sondern einem Werkteil zugeordnet werden können.
+## Principle 3
 
-#### Recording / Aufnahme
+Knowledge does not exist independently.
 
-Eine konkrete Aufführung oder Studioproduktion eines Werkes oder Werkteils.
+Knowledge emerges from relationships between entities.
 
-Beispiele:
-- Beethoven 5, Karajan, Berliner Philharmoniker, 1963
-- Matthäuspassion, Harnoncourt, Concentus Musicus Wien
-- Kind of Blue, Miles Davis, 1959
+---
 
-Eine Aufnahme hat Mitwirkende, Datum, Ort, Label und technische Quelle.
+## Principle 4
 
-#### Album
+The conceptual model is intentionally more general than the implementation model.
 
-Ein Veröffentlichungs- oder Sammlungscontainer.
+The database may contain specialised tables such as
 
-Beispiele:
-- CD-Album
-- Box Set
-- Compilation
-- Gesamtaufnahme
-- Ausschnitte
-- Sampler
+- Work
+- Recording
+- Person
+- Release
 
-Ein Album kann mehrere Werke enthalten. Ein Werk kann auf mehreren Alben vorkommen.
+while the conceptual model recognises them all simply as Entities.
 
-#### Track
+---
 
-Ein Track ist die konkrete Abspieleinheit innerhalb eines Albums oder einer Playlist.
+# Entity
 
-Ein Track kann zu einem Werkteil gehören und verweist auf eine oder mehrere Dateien.
+An Entity is anything that exists independently and can participate in relationships.
 
-#### File / Datei
+Examples include
 
-Eine Datei ist die technische Speicherform.
-
-Attribute:
-- Pfad
-- Dateiname
-- Format, z. B. MP3, AAC, ALAC, FLAC
-- Größe
-- Dauer
-- Bitrate
-- Prüfsumme
-- Root-Pfad
-
-## Mitwirkungen / Credits
-
-Mitwirkungen werden nicht als starre Felder gespeichert, sondern als eigene Beziehung.
-
-### Credit
-
-Ein Credit verbindet eine Person oder ein Ensemble mit einem Werk, einer Aufnahme, einem Album oder einem Track.
-
-Beispiele:
-- Herbert von Karajan — Dirigent — Aufnahme
-- Anne-Sophie Mutter — Solistin — Violine — Aufnahme
-- Wiener Philharmoniker — Orchester — Aufnahme
-- Christa Ludwig — Solistin — Mezzosopran — Aufnahme
-
-### Role
-
-Rollen beschreiben die Funktion:
-- Komponist
-- Dirigent
-- Solist
-- Sänger
-- Orchester
-- Chor
+- Work
+- Work Part
+- Recording
+- Release
+- File
+- Person
 - Ensemble
-- Interpret
-- Arrangeur
-- Textdichter
+- Instrument
+- Voice Type
+- Category
+- Collection
+- Location
+- Source
+- Label
+- Composer
+- Lyricist
 
-### Instrument
+Every Entity
 
-Instrumente sind eigene kontrollierte Werte:
-- Violine
-- Viola
-- Violoncello
-- Kontrabass
-- Klavier
-- Orgel
-- Flöte
-- Oboe
-- Klarinette
-- Fagott
-- Trompete
-- Horn
+- has a stable identity
+- may have multiple names
+- may participate in any number of relationships
+- may contain notes
+- may be classified
+- may be referenced by other entities
 
-Kurzformen können als Aliase geführt werden:
-- V → Violine
-- cl → Klarinette
-- ob → Oboe
-- p → Klavier
+An Entity never derives its meaning from its storage representation.
 
-### VoiceType / Stimmlage
+---
 
-Stimmlagen sind eigene kontrollierte Werte:
-- Sopran
-- Mezzosopran
-- Alt
-- Tenor
-- Bariton
-- Bass
-- Countertenor
+# Relationship
 
-Kurzformen können als Aliase geführt werden:
-- Sop → Sopran
-- Mezzo → Mezzosopran
-- Al → Alt
-- Ten → Tenor
-- Bar → Bariton
-- Bas → Bass
+A Relationship connects two entities.
 
-## Kategorien
+Relationships are first-class citizens of the model.
 
-Kategorien sind bewusst nicht identisch mit Genre. Sie sind frei kombinierbare Attribute.
+They are not implementation details.
 
-### CategoryType
+Every Relationship has
 
-Zunächst unterscheiden wir:
+- source entity
+- target entity
+- relationship type
+- optional direction
+- optional confidence
+- optional origin
+- optional comment
 
-#### Musikbeschreibende Kategorien
+Relationships are typed.
 
-Beispiele:
-- Barock
-- Klassik
-- Romantik
-- Oper
-- Operette
-- Oratorium
-- Chor
-- Jazz
-- R&B
-- Soul
-- Rock
-- Pop
-- Filmmusik
-- Weihnachtsmusik
+---
 
-#### Album-/Sammlungsbeschreibende Kategorien
+# Relationship Types
 
-Beispiele:
-- Gesamtaufnahme
-- Ausschnitte
-- Compilation
-- Liveaufnahme
-- Studioaufnahme
-- Historische Aufnahme
-- Box Set
-- Sampler
-- Remaster
+MusicCurator currently distinguishes three conceptual families.
 
-#### Weitere mögliche Kategoriearten
+## Identity Relationships
 
-- Epoche
-- Werktyp
-- Besetzung
-- Anlass
-- Quelle
-- Kurations-Tag
-- Export-Tag
+Identity Relationships answer the question
 
-### Category Assignment
+> "How do we know this is the same entity?"
 
-Kategorien können an verschiedenen Objekten hängen:
-- Werk
-- Werkteil
-- Aufnahme
-- Album
-- Track
+Examples
 
-Beispiel:
+- alternative title
+- translated title
+- catalogue number
+- alias
+- stage name
+- historical spelling
+- abbreviation
+- sort name
 
-Matthäuspassion:
-- Musik: Barock, Oratorium, Chor, Passion
-- Album: Gesamtaufnahme, Liveaufnahme
+Identity Relationships never change the meaning of an entity.
 
-Best of Aretha Franklin:
-- Musik: Soul, R&B
-- Album: Compilation
+They merely identify it.
 
-## Relationen
+---
 
-Wichtige Beziehungen:
+## Structural Relationships
 
-- Work 1:n WorkPart
-- Work n:m Person über Credit mit Role = Komponist
-- WorkPart n:m Track
-- Recording n:m Work oder WorkPart
-- Recording n:m Person/Ensemble über Credit
-- Album n:m Track
-- Track 1:n File oder meist 1:1 File
-- Work/Recording/Album/Track n:m Category
-- Person/Ensemble n:m Alias
+Structural Relationships describe composition.
 
-## Swinsian-Import
+Examples
 
-Swinsian-Felder werden zunächst gelesen und auf MusicCurator-Objekte gemappt.
+Work
+contains
+Work Part
 
-Mögliche Zuordnung:
-- title → Track.title oder WorkPart.title
-- album → Album.title
-- artist → Credit / Interpret
-- albumArtist → Album.primaryArtist oder Credit
-- composer → Person + Credit(role: Komponist)
-- conductor → Person + Credit(role: Dirigent)
-- work → Work.title
-- movement → WorkPart.number
-- movementName → WorkPart.title
-- genre → Category oder ImportTag
-- location/path → File.path
+Release
+contains
+Recording
 
-Wichtig: Importdaten bleiben nachvollziehbar. MusicCurator soll zwischen Originaldaten und kuratierten Daten unterscheiden können.
+Recording
+contains
+Credit
 
-## Export-Profile
+Collection
+contains
+Entity
 
-MusicCurator soll später unterschiedliche Präsentationsformen erzeugen können.
+Structural Relationships define organisation.
 
-Beispiele:
-- Master Library
-- Swinsian Sync
-- Synology / Netzwerk
-- USB Autoradio
-- Apple / iPhone
+---
 
-Für einfache Player wie Autoradios kann eine redundante Exportstruktur erzeugt werden:
-- sprechende Dateinamen
-- flache Ordnerstruktur
-- kompatible Tags
-- Playlists
+## Semantic Relationships
 
-Die Master-Bibliothek bleibt dabei unverändert.
+Semantic Relationships express meaning.
 
-## Offene Fragen für v0.2
+Examples
 
-1. Ist ein „Work“ bei Jazz/Pop immer sinnvoll, oder brauchen wir dort flexiblere Werktypen?
-2. Soll Album selbst als Werk gelten können, z. B. bei Konzeptalben?
-3. Wie unterscheiden wir Aufnahme, Edition und Veröffentlichung genau?
-4. Welche Kategoriearten brauchen wir von Anfang an?
-5. Wie gehen wir mit unvollständigen Swinsian-Daten um?
-6. Wie modellieren wir Mehrfachkomponisten und Bearbeitungen?
-7. Wie streng soll die Trennung Person / Ensemble sein?
+- influenced by
+- similar mood
+- related instrumentation
+- same literary source
+- continuation of
+- contrast to
+- recommended after
+- personal association
 
-## Nächster Schritt
+Semantic Relationships are the foundation of the MusicCurator Knowledge Layer.
 
-Dieses Modell wird fachlich geprüft. Danach erstellen wir daraus:
-- DataModel.md
-- erstes SQLite-Schema
-- Swift Models
-- Import-Mapping aus Swinsian
+---
+
+# Knowledge
+
+Knowledge is not stored as an isolated object.
+
+Knowledge is the network created by semantic relationships.
+
+As more semantic relationships are added, the library becomes richer.
+
+The system therefore evolves from a music catalogue into a music knowledge base.
+
+---
+
+# Design Goal
+
+MusicCurator shall never ask
+
+"What file is this?"
+
+Instead it shall ask
+
+"What entity is this?"
+
+and
+
+"How is it related to everything else?"
+
+Everything beyond this point is a specialised view of these two questions.
